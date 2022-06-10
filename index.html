@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Lab 01 - Fatorial</title>
 </head>
 <body>
-  
-    <p>Faça um programa que leia dois números e imprima a soma.</p>
-   
-  Numero 1<input class="number1" type="number"><br>
-  Numero 2<input class="number2" type="number"><br>
-  <button onclick="soma()">Resultado</button>
-  <p class="result"></p>
-  
-    <p>Faça um programa que leia dois números e indique qual dos dois é o maior.</p>
-  
-    <p>Faça um programa que verifique se o número é primo.</p>
-  
-    <p>Considerando os dois números passado representam a dimensão dos catetos de um triângulo retângulo,
-    faça um programa que calcule o tamanho da hipotenusa.</p>
-  
-    <p>Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.   Calcular e escrever o valor do novo salário.</p>
-     
-    <p>Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor 
-        correspondente em graus Celsius (baseado na fórmula abaixo):C =F-325 9 Observação: Para testar se a sua
-         resposta está correta saiba que 100 C = 212F7.</p>
- 
-    <p>Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor 
-    correspondente em graus Celsius (baseado na fórmula abaixo):C =F-325 9 Observação: Para testar se a sua
-     resposta está correta saiba que 100 C = 212F7.</p>
-     
-     <p> Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno.
-        Considerar que a média é ponderada e que opeso das notas é 2, 3 e 5. Fórmula para o cálculo da média final 
-        é:mediaFinal=n1 * 2 + n2 * 3 + n3 * 5 10</p>
-     
+
+<h2>Fatorial in JavaScript</h2>
+<p>Questão 01</p>
+
+<form action="">
+    <input type="number" name="" id="fatorial">
+
+    <button id="bt">Enviar</button>
+</form>
+
+<script>
+but = document.getElementById("bt")
+but.addEventListener('click', function(){
+    number = document.getElementById("fatorial").value
+    let x = number
+    for(i=1;i<=x; i++){
+        number=number*i
+    }
+    rsult = document.createElement("p")
+    rsult.innerHTML = number
+    document.form.appendChild(rsult)
+})
+
+    </script>
+
+
+
 </body>
-<script src="app.js"></script>
 </html>
