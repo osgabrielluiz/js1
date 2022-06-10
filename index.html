@@ -11,14 +11,28 @@
 <h2>Fatorial in JavaScript</h2>
 <p>Questão 01</p>
 
+<form action="">
+    <input type="number" name="" id="fatorial">
+
+    <button id="bt">Enviar</button>
+</form>
+
 <script>
-    fatorial=1
-    x=parseInt(prompt("Digite um numero"))
-    for(i=1;i<=x;i++){
-        fatorial=fatorial*i
+but = document.getElementById("bt")
+but.addEventListener('click', function(){
+    number = document.getElementById("fatorial").value
+    let x = number
+    for(i=1;i<=x; i++){
+        number=number*i
     }
-    alert(fatorial)
+    rsult = document.createElement("p")
+    rsult.innerHTML = number
+    document.form.appendChild(rsult)
+})
+
     </script>
+
+
 
 </body>
 </html>
