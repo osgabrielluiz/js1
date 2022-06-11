@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/fatorial.js" defer></script>
     <title>Lab 01 - Fatorial</title>
 </head>
 <body>
 
-<h2>Fatorial in JavaScript</h2>
-<p>Questão 01</p>
+<h2>Fatorial in JS</h2>
 
-<script>
-    fatorial=1
-    x=parseInt(prompt("Digite um numero"))
-    for(i=1;i<=x;i++){
-        fatorial=fatorial*i
-    }
-    alert(fatorial)
-    </script>
+
+<input type="number" id="n1">
+<button type="submit" id="bt">Enviar</button>
+
+<div id="result"> </div>
+
+<!--
+1.Faça um programa que calcule o fatorial de um número qualquer. O fatorial de um número N é igual ao produto N x (N-1) x (N-2) ... x 1. Para testar sua solução, seu programa deve calcular e imprimir o fatorial de 12.
+
+2.Faça um programa que imprima 30 primeiras potências de 4, ou seja, 4 elevado a 1, 4 elevado a 2 etc.
+
+3.Faça um programa para obter a soma de todos os números pares positivos até 1000.
+
+4.Faça um programa que calcule e imprima os 100 primeiros números da sequência de Fibonacci, definida por: A1 = 1; A2 = 2; A3 = 1 + 2 = A1 + A2; An = An-1 + An-2 (n>=3)
+
+5.Faça um programa que identifique e imprima todos os números primos entre 2 e 1000.
+-->
+
 
 </body>
 </html>
