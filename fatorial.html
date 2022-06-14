@@ -9,13 +9,30 @@
 </head>
 <body>
 
-<h2>Fatorial in JS</h2>
+<h2>Fatorial in JavaScript</h2>
+<p>Questão 01</p>
 
+<form action="">
+    <input type="number" name="" id="fatorial">
 
-<input type="number" id="n1">
-<button type="submit" id="bt">Enviar</button>
+    <button id="bt">Enviar</button>
+</form>
 
-<div id="result"> </div>
+<script>
+but = document.getElementById("bt")
+but.addEventListener('click', function(){
+    number = document.getElementById("fatorial").value
+    let x = number
+    for(i=1;i<=x; i++){
+        number=number*i
+    }
+    rsult = document.createElement("p")
+    rsult.innerHTML = number
+    appendChild(rsult)
+})
+
+    </script>
+
 
 <!--
 1.Faça um programa que calcule o fatorial de um número qualquer. O fatorial de um número N é igual ao produto N x (N-1) x (N-2) ... x 1. Para testar sua solução, seu programa deve calcular e imprimir o fatorial de 12.
