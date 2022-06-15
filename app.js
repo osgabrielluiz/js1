@@ -1,7 +1,7 @@
 
-function number1(){
-    const fact = document.querySelector("#number")
-    const resp1 = document.querySelector("#resp1")
+function n1(){
+    const fact = document.getElementById('number')
+    const resp1 = document.getElementById('resp1')
 
     let calc = 1
 
@@ -14,8 +14,8 @@ function number1(){
 
 }
 
-function number2(){
-    resp2 = document.querySelector("#resp2")
+function n2(){
+    resp2 = document.getElementById('resp2')
 
     for(let i = 0; i <= 30; i++){
         pot = Math.pow(4, i)
@@ -25,8 +25,8 @@ function number2(){
 
 } 
 
-function number3() {
-    const resp3 = document.querySelector("#resp3")
+function n3() {
+    const resp3 = document.getElementById('resp3')
 
     let total = 0
 
@@ -41,9 +41,9 @@ function number3() {
 
 }
 
-function number4(){
-    const number = document.querySelector("#number")
-    const resp4 = document.querySelector("#resp4")
+function n4(){
+    const number = document.getElementById('number')
+    const resp4 = document.getElementById('resp4')
 
     let atual = 1
     let nxt = 0
@@ -58,8 +58,8 @@ function number4(){
     }
 }
 
-function number5(){
-    resp5 = document.querySelector("#resp5")
+function n5(){
+    resp5 = document.getElementById('resp5')
     
     for(let i = 1; i <= 1000; i++){
         if(i % 2 == 0 || i % 3 == 0){
@@ -71,12 +71,12 @@ function number5(){
     }
 
 }
-const buton = document.querySelector("#enviar")
-buton.addEventListener("click", () => {
-    number1()
-    number2()
-    number3()
-    number4()
-    number5()
+const buton = document.getElementById('enviar')
+buton.addEventListener('click', () => {
+    n1()
+    n2()
+    n3()
+    n4()
+    n5()
 
 }) 
