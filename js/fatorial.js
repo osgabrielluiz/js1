@@ -5,7 +5,7 @@ function fat(){
     
     let rr = document.getElementById('result')
 
-    let num = document.getElementById('n1').value
+    let num = document.getElementById('fatorial').value
     let x = num
 
     let resu= document.createElement('p')

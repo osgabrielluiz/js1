@@ -1,9 +1,9 @@
+let button = document.getElementById('bot')
+button.addEventListener("click", data())
 function data () {
-    const userDate = querySelector("#userDate")
+    const userDate = getElementById('userDate')
     console.log(userDate)
 
     return userDate
 }
 
-const button = document.querySelector("#button")
-button.addEventListener("click", data())
